@@ -1,3 +1,5 @@
+local Framework = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
+
 hookfunction(getupvalue(Framework.Network.Invoke, 1),function(...)
     return true
 end)
